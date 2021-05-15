@@ -76,7 +76,7 @@ COPY ["Makefile", \
 RUN make -C /tmp/ init
 
 COPY ./docker/script/entrypoint.sh /entrypoint.sh
-COPY ./config/airflow.cfg ${AIRFLOW_HOME}/airflow.cfg
+COPY ./config/airflow.cfg ${AIRFLOW_HOME}/airflow/airflow.cfg
 
 RUN chown -R airflow: ${AIRFLOW_HOME}
 

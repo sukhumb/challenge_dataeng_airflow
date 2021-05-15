@@ -22,6 +22,7 @@ services:
         environment:
             - LOAD_EX=n
             - EXECUTOR=Local
+            - AIRFLOW_HOME=/usr/local/airflow
         volumes:
             - ../dags:/usr/local/airflow/dags
             # Uncomment to include custom plugins
